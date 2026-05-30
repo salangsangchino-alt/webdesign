@@ -77,3 +77,4 @@
       if (e.key === 'ArrowLeft') lbPrev.click();
       if (e.key === 'ArrowRight') lbNext.click();
     });
+    
