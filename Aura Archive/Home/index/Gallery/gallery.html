@@ -15,13 +15,13 @@
 
 <header>
     <div class="logo">
-        <a href="index.html">
+        <a href="gallery.html">
             <img src="../index/diamond-logo.png" alt="Aura Archive Logo" class="logo-img">
             <span class="logo-text">AURA ARCHIVE</span>
         </a>
     </div>
     <nav>
-        <a href="index.html" class="active">Home</a>
+        <a href="../index.html" class="active">Home</a>
         <a href="../About/about.html">About</a>
         <a href="services.html">Services</a>
         <a href="gallery.html">Gallery</a>
@@ -59,7 +59,7 @@
 
       <!-- Row 1 -->
       <div class="gallery-item tall" data-category="collection">
-        <img src="../img/artisan.jpg" alt="Neutral timeless garments – permanent collection">
+        <img src="../img/gallery1.jpg" alt="Neutral timeless garments – permanent collection">
         <div class="gallery-overlay">
           <span class="item-category">Collection</span>
           <h3>The Permanent Collection</h3>
@@ -67,7 +67,7 @@
       </div>
 
       <div class="gallery-item" data-category="editorial">
-        <img src="img/closeup.jpg" alt="Charcoal silk midi dress close-up">
+        <img src="../img/gallery2.jpg" alt="Charcoal silk midi dress close-up">
         <div class="gallery-overlay">
           <span class="item-category">Editorial</span>
           <h3>Fabric Deep Dives</h3>
@@ -75,7 +75,7 @@
       </div>
 
       <div class="gallery-item" data-category="artisan">
-        <img src="img/artisan.jpg" alt="Artisan working with luxury fabric">
+        <img src="../img/gallery5.jpg" alt="Artisan working with luxury fabric">
         <div class="gallery-overlay">
           <span class="item-category">Artisan</span>
           <h3>Artisan Spotlights</h3>
@@ -84,7 +84,7 @@
 
       <!-- Row 2 -->
       <div class="gallery-item wide" data-category="editorial">
-        <img src="img/styling.jpg" alt="Cream tailored outfit with quiet luxury accessories">
+        <img src="../img/gallery4.jpg" alt="Cream tailored outfit with quiet luxury accessories">
         <div class="gallery-overlay">
           <span class="item-category">Editorial</span>
           <h3>Shop the Look</h3>
@@ -92,7 +92,7 @@
       </div>
 
       <div class="gallery-item tall" data-category="bridal">
-        <img src="img/seasons.jpg" alt="Muted seasonal fashion editorial">
+        <img src="../img/gallery3.jpg" alt="Muted seasonal fashion editorial">
         <div class="gallery-overlay">
           <span class="item-category">Bridal</span>
           <h3>Seasonal Bridal Edit</h3>
@@ -101,7 +101,7 @@
 
       <!-- Row 3 -->
       <div class="gallery-item" data-category="collection">
-        <img src="img/stylings.jpg" alt="Quiet luxury styling consultation">
+        <img src="../img/gallery6.jpg" alt="Quiet luxury styling consultation">
         <div class="gallery-overlay">
           <span class="item-category">Collection</span>
           <h3>Private Styling</h3>
@@ -109,7 +109,7 @@
       </div>
 
       <div class="gallery-item" data-category="editorial">
-        <img src="img/timeless.jpg" alt="Timeless muted wardrobe essentials">
+        <img src="../img/gallery7.jpg" alt="Timeless muted wardrobe essentials">
         <div class="gallery-overlay">
           <span class="item-category">Editorial</span>
           <h3>Quiet Luxury Defined</h3>
@@ -117,7 +117,7 @@
       </div>
 
       <div class="gallery-item wide" data-category="artisan">
-        <img src="img/artisan.jpg" alt="Fabric weaving detail">
+        <img src="../img/gallery8.jpg" alt="Fabric weaving detail">
         <div class="gallery-overlay">
           <span class="item-category">Artisan</span>
           <h3>The Weave</h3>
@@ -126,7 +126,7 @@
 
       <!-- Row 4 -->
       <div class="gallery-item tall" data-category="collection">
-        <img src="img/closeup.jpg" alt="Draped silk neckline detail">
+        <img src="../img/gallery9.jpg" alt="Draped silk neckline detail">
         <div class="gallery-overlay">
           <span class="item-category">Collection</span>
           <h3>Drape &amp; Silhouette</h3>
@@ -134,7 +134,7 @@
       </div>
 
       <div class="gallery-item" data-category="bridal">
-        <img src="img/styling.jpg" alt="Bridal soft tailoring detail">
+        <img src="../img/gallery10.jpg" alt="Bridal soft tailoring detail">
         <div class="gallery-overlay">
           <span class="item-category">Bridal</span>
           <h3>Soft Tailoring</h3>
@@ -142,7 +142,7 @@
       </div>
 
       <div class="gallery-item" data-category="editorial">
-        <img src="img/seasons.jpg" alt="Seasonal editorial moodboard">
+        <img src="../img/gallery11.jpg" alt="Seasonal editorial moodboard">
         <div class="gallery-overlay">
           <span class="item-category">Editorial</span>
           <h3>Seasonal Moodboard</h3>
@@ -201,88 +201,8 @@
     <p>&copy; 2026 Aura Archive. All Rights Reserved.</p>
   </footer>
 
-  <script>
-    /* ── FILTER ── */
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const items = document.querySelectorAll('.gallery-item');
+  <script src="gallery.js"></script>
 
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.dataset.filter;
-        items.forEach(item => {
-          const match = filter === 'all' || item.dataset.category === filter;
-          item.style.opacity = match ? '1' : '0.15';
-          item.style.pointerEvents = match ? 'auto' : 'none';
-        });
-      });
-    });
-
-    /* ── LIGHTBOX ── */
-    const lightbox = document.getElementById('lightbox');
-    const backdrop = document.getElementById('lightbox-backdrop');
-    const lbImg    = document.getElementById('lightbox-img');
-    const lbCat    = document.getElementById('lightbox-category');
-    const lbTitle  = document.getElementById('lightbox-title');
-    const lbClose  = document.getElementById('lightbox-close');
-    const lbPrev   = document.getElementById('lightbox-prev');
-    const lbNext   = document.getElementById('lightbox-next');
-
-    let currentIndex = 0;
-    const visibleItems = () => [...items].filter(i => i.style.opacity !== '0.15');
-
-    function openLightbox(index) {
-      const list = visibleItems();
-      currentIndex = index;
-      const item = list[currentIndex];
-      lbImg.src   = item.querySelector('img').src;
-      lbImg.alt   = item.querySelector('img').alt;
-      lbCat.textContent   = item.querySelector('.item-category').textContent;
-      lbTitle.textContent = item.querySelector('h3').textContent;
-      lightbox.setAttribute('aria-hidden', 'false');
-      lightbox.classList.add('open');
-      backdrop.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeLightbox() {
-      lightbox.classList.remove('open');
-      backdrop.classList.remove('open');
-      lightbox.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-    }
-
-    items.forEach((item, i) => {
-      item.addEventListener('click', () => {
-        const list = visibleItems();
-        const visIndex = list.indexOf(item);
-        openLightbox(visIndex);
-      });
-    });
-
-    lbClose.addEventListener('click', closeLightbox);
-    backdrop.addEventListener('click', closeLightbox);
-
-    lbPrev.addEventListener('click', () => {
-      const list = visibleItems();
-      currentIndex = (currentIndex - 1 + list.length) % list.length;
-      openLightbox(currentIndex);
-    });
-
-    lbNext.addEventListener('click', () => {
-      const list = visibleItems();
-      currentIndex = (currentIndex + 1) % list.length;
-      openLightbox(currentIndex);
-    });
-
-    document.addEventListener('keydown', e => {
-      if (!lightbox.classList.contains('open')) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowLeft') lbPrev.click();
-      if (e.key === 'ArrowRight') lbNext.click();
-    });
-  </script>
 
 </body>
 </html>
