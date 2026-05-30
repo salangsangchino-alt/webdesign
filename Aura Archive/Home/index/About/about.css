@@ -1,79 +1,89 @@
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root {
-            --cream:      #faf9f7;
-            --cream-mid:  #f5f0e8;
-            --cream-dark: #ede8e0;
-            --gold:       #c9b99a;
-            --gold-rich:  #D4AF37;
-            --charcoal:   #1a1917;
-            --charcoal-2: #2a2720;
-            --brown:      #5a5040;
-            --muted:      #8a7d6b;
-            --border:     #d8d0c4;
-            --border-lt:  #e8e2d8;
-            --font-display: 'Cormorant Garamond', Georgia, serif;
-            --font-body:    'Jost', sans-serif;
-            --header-h: 64px;
-            --max-w: 1400px;
-        }
+/* ── RESET & BASE ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-        html { scroll-behavior: smooth; }
+:root {
+    --cream:        #faf9f7;
+    --cream-mid:    #f5f0e8;
+    --cream-dark:   #ede8e0;
+    --gold:         #c9b99a;
+    --gold-rich:    #D4AF37;
+    --charcoal:     #1a1917;
+    --charcoal-2:   #2a2720;
+    --brown:        #5a5040;
+    --muted:        #8a7d6b;
+    --border:       #d8d0c4;
+    --border-lt:    #e8e2d8;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body:    'Jost', sans-serif;
+    --header-h:     64px;
+    --max-w:        1400px;
+}
 
-        body {
-            font-family: var(--font-body);
-            font-weight: 300;
-            background: var(--cream);
-            color: var(--charcoal);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
+html { scroll-behavior: smooth; }
 
-        a { color: inherit; text-decoration: none; }
-        img { max-width: 100%; height: auto; display: block; }
+body {
+    font-family: var(--font-body);
+    font-weight: 300;
+    background: var(--cream);
+    color: var(--charcoal);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
 
-        /* ── HEADER ── */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            background: rgba(250,249,247,0.97);
-            border-bottom: 0.5px solid var(--border-lt);
-            height: var(--header-h);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 60px;
-        }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
 
-        .logo a {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
 
-        .logo-img { height: 36px; width: auto; }
+/* ── HEADER ── */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(250,249,247,0.97);
+    border-bottom: 0.5px solid var(--border-lt);
+    height: var(--header-h);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
 
-        .logo-text {
-            font-family: var(--font-display);
-            font-size: 1.3rem;
-            color: var(--gold-rich);
-            font-weight: 400;
-            letter-spacing: 3px;
-        }
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
 
-        nav { display: flex; gap: 28px; }
+.logo-img { height: 36px; width: auto; }
 
-        nav a {
-            font-size: 10px;
-            font-weight: 300;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--muted);
-            transition: color 0.2s;
-        }
+.logo-text {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--gold-rich);
+    font-weight: 400;
+    letter-spacing: 3px;
+}
 
-        nav a:hover { color: var(--charcoal); }
-        nav a.active { color: var(--charcoal); border-bottom: 0.5px solid var(--charcoal); padding-bottom: 2px; }
+nav { display: flex; gap: 28px; }
+
+nav a {
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--muted);
+    transition: color 0.2s;
+}
+
+nav a:hover { color: var(--charcoal); }
+
+nav a.active {
+    color: var(--charcoal);
+    border-bottom: 0.5px solid var(--charcoal);
+    padding-bottom: 2px;
+}
 
         /* ── PAGE HERO ── */
         .page-hero {
