@@ -91,7 +91,7 @@ nav a.active {
   min-height: 360px;
   background:
     linear-gradient(to bottom, rgba(28,28,28,0.55) 0%, rgba(28,28,28,0.30) 100%),
-    url('img/timeless.jpg') center / cover no-repeat;
+    url('../img/timeless.jpg') center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -870,6 +870,7 @@ footer p {
     header { padding: 0 20px; }
     nav a { padding: 14px 20px; }
 }
+
         /* ── RESPONSIVE ── */
         @media (max-width: 1024px) {
             header { padding: 0 40px; }

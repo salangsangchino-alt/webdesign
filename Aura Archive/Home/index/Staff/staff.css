@@ -436,6 +436,28 @@ footer p {
     }
 }
 
+.page-hero {
+  background-image: url('../img/gallery1.jpg');
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+}
+
+.page-hero-content {
+  position: relative; /* sits above the overlay */
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .gallery-hero {
+    background-attachment: scroll;
+  }
+}
 @media (max-width: 480px) {
     header { padding: 0 20px; }
     nav a { padding: 14px 20px; }

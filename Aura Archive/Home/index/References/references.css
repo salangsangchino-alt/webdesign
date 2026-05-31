@@ -439,6 +439,16 @@ footer p {
     header { padding: 0 20px; }
     nav a { padding: 14px 20px; }
 }
+.ref-item strong a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 0.5px solid var(--gold);
+  transition: color 0.2s;
+}
+
+.ref-item strong a:hover {
+  color: var(--gold-rich);
+}
         /* ── RESPONSIVE ── */
         @media (max-width: 1024px) {
             header { padding: 0 40px; }
@@ -450,6 +460,7 @@ footer p {
             .footer-bottom { padding: 20px 40px; }
             .pillars-grid { gap: 0; }
         }
+        
 
         @media (max-width: 768px) {
             header { padding: 0 24px; }
