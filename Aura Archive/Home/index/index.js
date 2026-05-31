@@ -1,9 +1,4 @@
-     document.getElementById('c-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        this.classList.add('hidden');
-        document.getElementById('c-success').classList.add('visible');
-    });
-    
+
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('nav');
     toggle.addEventListener('click', () => {
