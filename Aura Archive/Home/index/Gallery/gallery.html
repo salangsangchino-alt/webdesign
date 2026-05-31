@@ -1,207 +1,182 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Aura Archive | High-End Slow Fashion</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="gallery.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aura Archive | High-End Slow Fashion</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<link href="gallery.css" rel="stylesheet"/>
 </head>
-
 <body>
 <header>
-    <div class="logo">
-        <a href="gallery.html">
-            <img src="../diamond-logo.png" alt="Aura Archive Logo" class="logo-img">
-            <span class="logo-text">AURA ARCHIVE</span>
-        </a>
-    </div>
-    <nav>
-        <a href="../index.html" >Home</a>
-        <a href="../About/about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html"class="active">Gallery</a>
-        <a href="staff.html">Staff</a>
-        <a href="wedding.html">Bridal</a>
-        <a href="../Contact/contact.html">Contact</a>
-        <a href="references.html">References</a>
-    </nav>
+<div class="logo">
+<a href="../index.html">
+<img alt="Aura Archive Logo" class="logo-img" src="../diamond-logo.png"/>
+<span class="logo-text">AURA ARCHIVE</span>
+</a>
+</div>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../About/about.html">About</a>
+<a href="../Services/services.html">Services</a>
+<a class="active" href="../Gallery/gallery.html">Gallery</a>
+<a href="../Staff/staff.html">Staff</a>
+<a href="../Wedding/wedding.html">Bridal</a>
+<a href="../Contact/contact.html">Contact</a>
+<a href="../References/references.html">References</a>
+</nav>
 </header>
-
-  <main>
-    <!-- HERO BANNER -->
-    <section class="gallery-hero">
-      <div class="hero-content">
-        <span class="hero-label">Visual Archive</span>
-        <h1>The Gallery</h1>
-        <div class="gold-divider"></div>
-        <p>A curated record of form, fabric, and the art of restraint.</p>
-      </div>
-    </section>
-
-    <!-- FILTER BAR -->
-    <section class="filter-bar">
-      <ul class="filter-list">
-        <li><button class="filter-btn active" data-filter="all">All</button></li>
-        <li><button class="filter-btn" data-filter="collection">Collection</button></li>
-        <li><button class="filter-btn" data-filter="bridal">Bridal</button></li>
-        <li><button class="filter-btn" data-filter="editorial">Editorial</button></li>
-        <li><button class="filter-btn" data-filter="artisan">Artisan</button></li>
-      </ul>
-    </section>
-
-    <!-- MASONRY GALLERY -->
-    <section class="gallery-grid">
-
-      <!-- Row 1 -->
-      <div class="gallery-item tall" data-category="collection">
-        <img src="../img/gallery1.jpg" alt="Neutral timeless garments – permanent collection">
-        <div class="gallery-overlay">
-          <span class="item-category">Collection</span>
-          <h3>The Permanent Collection</h3>
-        </div>
-      </div>
-
-      <div class="gallery-item" data-category="editorial">
-        <img src="../img/gallery2.jpg" alt="Charcoal silk midi dress close-up">
-        <div class="gallery-overlay">
-          <span class="item-category">Editorial</span>
-          <h3>Fabric Deep Dives</h3>
-        </div>
-      </div>
-
-      <div class="gallery-item" data-category="artisan">
-        <img src="../img/gallery5.jpg" alt="Artisan working with luxury fabric">
-        <div class="gallery-overlay">
-          <span class="item-category">Artisan</span>
-          <h3>Artisan Spotlights</h3>
-        </div>
-      </div>
-
-      <!-- Row 2 -->
-      <div class="gallery-item wide" data-category="editorial">
-        <img src="../img/gallery4.jpg" alt="Cream tailored outfit with quiet luxury accessories">
-        <div class="gallery-overlay">
-          <span class="item-category">Editorial</span>
-          <h3>Shop the Look</h3>
-        </div>
-      </div>
-
-      <div class="gallery-item tall" data-category="bridal">
-        <img src="../img/gallery3.jpg" alt="Muted seasonal fashion editorial">
-        <div class="gallery-overlay">
-          <span class="item-category">Bridal</span>
-          <h3>Seasonal Bridal Edit</h3>
-        </div>
-      </div>
-
-      <!-- Row 3 -->
-      <div class="gallery-item" data-category="collection">
-        <img src="../img/gallery6.jpg" alt="Quiet luxury styling consultation">
-        <div class="gallery-overlay">
-          <span class="item-category">Collection</span>
-          <h3>Private Styling</h3>
-        </div>
-      </div>
-
-      <div class="gallery-item" data-category="editorial">
-        <img src="../img/gallery7.jpg" alt="Timeless muted wardrobe essentials">
-        <div class="gallery-overlay">
-          <span class="item-category">Editorial</span>
-          <h3>Quiet Luxury Defined</h3>
-        </div>
-      </div>
-
-      <div class="gallery-item wide" data-category="artisan">
-        <img src="../img/gallery8.jpg" alt="Fabric weaving detail">
-        <div class="gallery-overlay">
-          <span class="item-category">Artisan</span>
-          <h3>The Weave</h3>
-        </div>
-      </div>
-
-      <!-- Row 4 -->
-      <div class="gallery-item tall" data-category="collection">
-        <img src="../img/gallery9.jpg" alt="Draped silk neckline detail">
-        <div class="gallery-overlay">
-          <span class="item-category">Collection</span>
-          <h3>Drape &amp; Silhouette</h3>
-        </div>
-      </div>
-
-      <div class="gallery-item" data-category="bridal">
-        <img src="../img/gallery10.jpg" alt="Bridal soft tailoring detail">
-        <div class="gallery-overlay">
-          <span class="item-category">Bridal</span>
-          <h3>Soft Tailoring</h3>
-        </div>
-      </div>
-
-      <div class="gallery-item" data-category="editorial">
-        <img src="../img/gallery11.jpg" alt="Seasonal editorial moodboard">
-        <div class="gallery-overlay">
-          <span class="item-category">Editorial</span>
-          <h3>Seasonal Moodboard</h3>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- LIGHTBOX -->
-    <div class="lightbox" id="lightbox" aria-hidden="true">
-      <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
-      <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8592;</button>
-      <button class="lightbox-next" id="lightbox-next" aria-label="Next">&#8594;</button>
-      <div class="lightbox-inner">
-        <img src="" alt="" id="lightbox-img">
-        <div class="lightbox-caption">
-          <span id="lightbox-category"></span>
-          <h3 id="lightbox-title"></h3>
-        </div>
-      </div>
-    </div>
-    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
-
-    <!-- EDITORIAL PULL-QUOTE -->
-    <section class="gallery-quote">
-      <blockquote>
-        <span class="opening-mark">&ldquo;</span>
+<main>
+<!-- HERO BANNER -->
+<section class="gallery-hero">
+<div class="hero-content">
+<span class="hero-label">Visual Archive</span>
+<h1>The Gallery</h1>
+<div class="gold-divider"></div>
+<p>A curated record of form, fabric, and the art of restraint.</p>
+</div>
+</section>
+<!-- FILTER BAR -->
+<section class="filter-bar">
+<ul class="filter-list">
+<li><button class="filter-btn active" data-filter="all">All</button></li>
+<li><button class="filter-btn" data-filter="collection">Collection</button></li>
+<li><button class="filter-btn" data-filter="bridal">Bridal</button></li>
+<li><button class="filter-btn" data-filter="editorial">Editorial</button></li>
+<li><button class="filter-btn" data-filter="artisan">Artisan</button></li>
+</ul>
+</section>
+<!-- MASONRY GALLERY -->
+<section class="gallery-grid">
+<!-- Row 1 -->
+<div class="gallery-item tall" data-category="collection">
+<img alt="Neutral timeless garments – permanent collection" src="../img/gallery1.jpg"/>
+<div class="gallery-overlay">
+<span class="item-category">Collection</span>
+<h3>The Permanent Collection</h3>
+</div>
+</div>
+<div class="gallery-item" data-category="editorial">
+<img alt="Charcoal silk midi dress close-up" src="../img/gallery2.jpg"/>
+<div class="gallery-overlay">
+<span class="item-category">Editorial</span>
+<h3>Fabric Deep Dives</h3>
+</div>
+</div>
+<div class="gallery-item" data-category="artisan">
+<img alt="Artisan working with luxury fabric" src="../img/gallery5.jpg"/>
+<div class="gallery-overlay">
+<span class="item-category">Artisan</span>
+<h3>Artisan Spotlights</h3>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="gallery-item wide" data-category="editorial">
+<img alt="Cream tailored outfit with quiet luxury accessories" src="../img/gallery4.jpg"/>
+<div class="gallery-overlay">
+<span class="item-category">Editorial</span>
+<h3>Shop the Look</h3>
+</div>
+</div>
+<div class="gallery-item tall" data-category="bridal">
+<img alt="Muted seasonal fashion editorial" src="../img/gallery3.jpg"/>
+<div class="gallery-overlay">
+<span class="item-category">Bridal</span>
+<h3>Seasonal Bridal Edit</h3>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="gallery-item" data-category="collection">
+<img alt="Quiet luxury styling consultation" src="../img/gallery6.jpg"/>
+<div class="gallery-overlay">
+<span class="item-category">Collection</span>
+<h3>Private Styling</h3>
+</div>
+</div>
+<div class="gallery-item" data-category="editorial">
+<img alt="Timeless muted wardrobe essentials" src="../img/gallery7.jpg"/>
+<div class="gallery-overlay">
+<span class="item-category">Editorial</span>
+<h3>Quiet Luxury Defined</h3>
+</div>
+</div>
+<div class="gallery-item wide" data-category="artisan">
+<img alt="Fabric weaving detail" src="../img/gallery8.jpg"/>
+<div class="gallery-overlay">
+<span class="item-category">Artisan</span>
+<h3>The Weave</h3>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="gallery-item tall" data-category="collection">
+<img alt="Draped silk neckline detail" src="../img/gallery9.jpg"/>
+<div class="gallery-overlay">
+<span class="item-category">Collection</span>
+<h3>Drape &amp; Silhouette</h3>
+</div>
+</div>
+<div class="gallery-item" data-category="bridal">
+<img alt="Bridal soft tailoring detail" src="../img/gallery10.jpg"/>
+<div class="gallery-overlay">
+<span class="item-category">Bridal</span>
+<h3>Soft Tailoring</h3>
+</div>
+</div>
+<div class="gallery-item" data-category="editorial">
+<img alt="Seasonal editorial moodboard" src="../img/gallery11.jpg"/>
+<div class="gallery-overlay">
+<span class="item-category">Editorial</span>
+<h3>Seasonal Moodboard</h3>
+</div>
+</div>
+</section>
+<!-- LIGHTBOX -->
+<div aria-hidden="true" class="lightbox" id="lightbox">
+<button aria-label="Close" class="lightbox-close" id="lightbox-close">×</button>
+<button aria-label="Previous" class="lightbox-prev" id="lightbox-prev">←</button>
+<button aria-label="Next" class="lightbox-next" id="lightbox-next">→</button>
+<div class="lightbox-inner">
+<img alt="" id="lightbox-img" src=""/>
+<div class="lightbox-caption">
+<span id="lightbox-category"></span>
+<h3 id="lightbox-title"></h3>
+</div>
+</div>
+</div>
+<div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+<!-- EDITORIAL PULL-QUOTE -->
+<section class="gallery-quote">
+<blockquote>
+<span class="opening-mark">“</span>
         Every stitch is a commitment to the earth and to those who will wear it long after us.
-        <span class="closing-mark">&rdquo;</span>
-      </blockquote>
-      <cite>&mdash; Aura Archive, The Thread Magazine</cite>
-    </section>
-
-    <!-- CTA -->
-    <section class="gallery-cta">
-      <div class="cta-inner">
-        <span class="sub-heading">Step Inside</span>
-        <h2>Book a Private Viewing</h2>
-        <p>Experience the full archive in person. Our stylists will guide you through the collection.</p>
-        <a href="../Contact/contact.html" class="btn-gold">Request an Appointment</a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="social-link">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-      <a href="#"><i class="fab fa-google-plus"></i></a>
-      <a href="#"><i class="fab fa-pinterest"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
-    <p>&copy; 2026 Aura Archive. All Rights Reserved.</p>
-  </footer>
-
-  <script src="gallery.js"></script>
-
-
+        <span class="closing-mark">”</span>
+</blockquote>
+<cite>— Aura Archive, The Thread Magazine</cite>
+</section>
+<!-- CTA -->
+<section class="gallery-cta">
+<div class="cta-inner">
+<span class="sub-heading">Step Inside</span>
+<h2>Book a Private Viewing</h2>
+<p>Experience the full archive in person. Our stylists will guide you through the collection.</p>
+<a class="btn-gold" href="../Contact/contact.html">Request an Appointment</a>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer>
+<div class="social-link">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-google-plus"></i></a>
+<a href="#"><i class="fab fa-pinterest"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+<p>© 2026 Aura Archive. All Rights Reserved.</p>
+</footer>
+<script src="gallery.js"></script>
 </body>
 </html>
